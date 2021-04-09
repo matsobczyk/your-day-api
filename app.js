@@ -25,7 +25,7 @@ mongoose.connect(
 
 
 app.get('/', (req, res) => {
-    res.send('Make Your Day!')
+    res.send('Make Your Da!y!')
 })
 
 app.listen(3000)
