@@ -11,9 +11,11 @@ app.use(bodyParser.json());
 const authRoute = require('./routes/auth.js');
 const adminRoute = require('./routes/admin.js');
 const userRoute = require('./routes/user.js');
+const notesRoute = require('./routes/notes.js');
 app.use('/user', authRoute);
 app.use('/admin', adminRoute );
 app.use('/user', userRoute );
+app.use('/notes', notesRoute);
 
 
 mongoose.connect(
