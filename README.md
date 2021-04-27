@@ -5,20 +5,21 @@ w semestrze letnim roku akademickiego 2020/20201**
 
 # Wymagane dokumenty
 
-1. Charakterystyka oprogramowania - odpowiedzialność: wizjoner.
+1. Charakterystyka oprogramowania
   1. Nazwa skrócona.
-YourDay
+  YourDay
   2. Nazwa pełna.
-YourDay, personal manager.
+  YourDay, personal manager.
   3. Krótki opis ze wskazaniem celów.
-Aplikacja webowa, która jest narzędziem usprawniającym i poprawiającym produktywność w przedsiębiorstwie, kładące duży nacisk na prywatność danych użytkowników.
+  Aplikacja webowa, która jest narzędziem usprawniającym i poprawiającym produktywność w przedsiębiorstwie, kładące duży nacisk na prywatność danych użytkowników.
 2. Prawa autorskie - odpowiedzialność: wizjoner.
   1. Autorzy:
-
-Przemysław Stachurski, Mateusz Sobczyk, Filip Szczepański
+  - Przemysław Stachurski, 
+  - Mateusz Sobczyk, 
+  - Filip Szczepański
 
 1. Warunki licencyjne do oprogramowania wytworzonego przez grupę:
-1. Specyfikacja wymagań - odpowiedzialność: wizjoner
+1. Specyfikacja wymagań
   1. Wymagania funkcjonalne
     1. Identyfikator
     2. Nazwa krótka
