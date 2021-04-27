@@ -1,16 +1,17 @@
-const Joi = require('@hapi/joi');
+const Joi = require('joi');
 //invitation validation
-const inviteRegisterValidation= (data) => {
+const inviteRegisterValidation= data => {
     const schema = Joi.object ({
         inv: Joi.string()
             .required(),
         name: Joi.string()
             .required(),
-    })
-}
+    });
+};
+
 
 //register validation
-const registerValidation = (data) => {
+const registerValidation = data => {
     const schema = Joi.object ({
         name: Joi.string()
             .min(3)
@@ -22,7 +23,6 @@ const registerValidation = (data) => {
         password: Joi.string()
             .min(6)
             .required()
-            .regex(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{8,1024}$/) //special/number/capital
     });
     return schema.validate(data);
 };

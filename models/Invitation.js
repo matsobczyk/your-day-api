@@ -15,4 +15,5 @@ const Invitation = new mongoose.Schema({
     }
 })
 
+
 module.exports = mongoose.model("Invitation", Invitation);

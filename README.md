@@ -12,8 +12,8 @@ w semestrze letnim roku akademickiego 2020/20201**
         Aplikacja webowa, która jest narzędziem usprawniającym i poprawiającym produktywność w przedsiębiorstwie, kładące duży nacisk na prywatność danych użytkowników.
 2. Prawa autorskie
     1. Autorzy:
-        - Przemysław Stachurski, 
-        - Mateusz Sobczyk, 
+        - Przemysław Stachurski
+        - Mateusz Sobczyk
         - Filip Szczepański
     2. Warunki licencyjne do oprogramowania wytworzonego przez grupę:
         Oprogramowanie będzie open-source'owe, udostępnione na licencji MIT.

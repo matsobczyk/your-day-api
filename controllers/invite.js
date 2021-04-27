@@ -1,7 +1,6 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const Invitation = require('../models/Invitation')
-
+const Invitation = require('../models/Invitation');
 
 
 exports.createInvitation = (async (req, res) => {
@@ -40,9 +39,17 @@ exports.deleteInvitation = (async(req, res) => {
         res.json(err);
     }
 });
-
-
 exports.getInvitations = (async(req,res) => {
     const invitations = await Invitation.find();
     res.json(invitations);
-})
+});
+exports.checkInvitation = (async (req, res) => {
+    
+    const invitation = await Invitation.findOne({inv: req.body.inv});
+    
+    //create and assign a token
+    if(!invitation) return res.status(400).send('Wrong invitation');
+    
+    const token = jwt.sign({inv: invitation}, process.env.TOKEN_SECRETInv);
+    res.header('inv-token', token).send(token);
+});
