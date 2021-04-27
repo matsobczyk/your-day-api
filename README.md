@@ -17,14 +17,14 @@ w semestrze letnim roku akademickiego 2020/20201**
         - Przemysław Stachurski, 
         - Mateusz Sobczyk, 
         - Filip Szczepański
-
-1. Warunki licencyjne do oprogramowania wytworzonego przez grupę:
-1. Specyfikacja wymagań
-  1. Wymagania funkcjonalne
-    1. Identyfikator
-    2. Nazwa krótka
-    3. Opis
-    4. Priorytet [1-wymagana, 2 - oczekiwana, 3 - dodatkowa]
+    2. Warunki licencyjne do oprogramowania wytworzonego przez grupę:
+        Oprogramowanie będzie open-source'owe, udostępnione na licencji MIT.
+3. Specyfikacja wymagań
+    ##1. Wymagania funkcjonalne
+        1. Identyfikator
+        2. Nazwa krótka
+        3. Opis
+        4. Priorytet [1-wymagana, 2 - oczekiwana, 3 - dodatkowa]
 
 
 || Nazwa krótka | Opis | P |
@@ -39,7 +39,7 @@ w semestrze letnim roku akademickiego 2020/20201**
 | 8 | Wyświetlenie kalendarza oraz godziny | Pobieranie daty oraz godziny dla wybranego miasta i wyświetlenie ich w aplikacji. | 3 |
 | 9 | Wyświetlenie cytatu na dany dzień | Pobieranie cytatu na dany dzień za pomocą API zewnętrznego oraz wyświetlenie go w aplikacji | 3 |
 
-  1. Wymagania niefunkcjonalne.
+    ##2. Wymagania niefunkcjonalne.
 
 || Nazwa krótka | Opis | P |
 | --- | --- | --- | --- |
