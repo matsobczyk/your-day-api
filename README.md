@@ -3,8 +3,6 @@ dla projektów realizowanych w ramach zajęć
 Inżynierii oprogramowania
 w semestrze letnim roku akademickiego 2020/20201**
 
-# Wymagane dokumenty
-
 1. Charakterystyka oprogramowania
     1. Nazwa skrócona.
         YourDay
