@@ -62,18 +62,3 @@ w semestrze letnim roku akademickiego 2020/20201**
 3. Testy - odpowiedzialność: kontrola jakości.
   1. Scenariusze testów.
   2. Sprawozdanie z wykonania scenariuszy testów.
-
-# Kryteria Oceny
-
-1. Jakość przygotowanej dokumentacji oceniana według następujących kryteriów:
-  1. Doskonałość redakcyjna i edytorska.
-  2. Przejrzystość - struktura dokumentacji jest do uchwycenia poprzez wzrokową identyfikację poszczególnych elementów; nawigacja staje się wówczas uproszczona.
-  3. Spójność - wszystkie elementy dokumentacji tworzą jedną całość, np. numeracja specyfikacji wymagań musi bezpośrednio odnosić się do scenariuszy testów poprzez jasno określone identyfikatory.
-
-1. Zakres oferowanej funkcjonalności.
-  1. Projekt powinien być nietrywialny i innowacyjny pod względem technologicznym i/lub merytorycznym
-  2. Jakiekolwiek wykorzystanie zewnętrznych źródeł musi być jednoznacznie wykazane w dokumentacji
-2. Jakość dostarczonego kodu źródłowego oceniana według następujących kryteriów:
-  1. Przejrzystość - struktura i nazewnictwo plików, katalogów oraz pozostałych elementów projektu muszą być jasne i czytelne, np. każdy plik kodu powinien mieć taką samą wewnętrzną strukturę, jak i jednolite nazewnictwo.
-  2. Prostota - każde, nawet najbardziej skomplikowane zadanie musi być realizowane najprostszymi metodami, np. liczba linii kodu w metodach nie może przekraczać dopuszczalnej granicy.
-  3. Czytelność - dostarczony kod powinien być samowyjaśniający a tam, gdzie pojawiają się złożone rozwiązania konieczne jest wyjaśnienie dodatkowymi komentarzami,
