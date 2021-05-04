@@ -19,7 +19,9 @@ router.get('/users', auth.authAdmin, adminController.getUsers);
 router.delete('/user/:userId', auth.authAdmin, adminController.deleteUser);
 
 //API
-router.get('/articles', auth.authAdmin, articleController.getArticle);
+router.get('/articles', auth.authAdmin, articleController.getArticles);
+router.get('/updateArticles', auth.authAdmin, articleController.updateArticles);
+
 router.get('/quotes', auth.authAdmin, quoteController.getQuote);
 
 module.exports = router;

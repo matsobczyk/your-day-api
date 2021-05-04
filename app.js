@@ -9,7 +9,6 @@ app.use(cors())
 
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv')
-const newsapi = new NewsAPI('b9e4e3ad0e2b490bb7628960ed097477');
 
 
 
@@ -42,30 +41,30 @@ app.get('/', (req, res) => {
 })
 
 
-var job = new CronJob('* * 8 * * *', function() {
-    //calling quotes api
-    https.get("https://goquotes-api.herokuapp.com/api/v1/random?count=1", resp =>{
-        let data = "";
+// var job = new CronJob('* * 8 * * *', function() {
+//     //calling quotes api
+//     https.get("https://goquotes-api.herokuapp.com/api/v1/random?count=1", resp =>{
+//         let data = "";
     
-        resp.on("data", chunk =>{
-            data += chunk;
-        });
+//         resp.on("data", chunk =>{
+//             data += chunk;
+//         });
     
-        resp.on("end", () =>{
-            let calledQuote = JSON.parse(data);
-            console.log(quote);
-            const quote =new Quote({
-                text: calledQuote.text,
-                author: calledQuote.author,
-                tag: calledQuote.tag
-            })
-            quote.save;
-        });
+//         resp.on("end", () =>{
+//             let calledQuote = JSON.parse(data);
+//             console.log(quote);
+//             const quote =new Quote({
+//                 text: calledQuote.text,
+//                 author: calledQuote.author,
+//                 tag: calledQuote.tag
+//             })
+//             quote.save;
+//         });
         
-    })
-    .on("error", err =>{
-    console.log("error "+ err.message);
-    });
+//     })
+//     .on("error", err =>{
+//     console.log("error "+ err.message);
+//     });
     //calling newsapi
     // newsapi.v2.everything({
     //     q: 'bitcoin',
@@ -87,8 +86,8 @@ var job = new CronJob('* * 8 * * *', function() {
     //             article.save;
     
     // });
-});
-job.start();
+// });
+// job.start();
 
 
 app.listen(3000)
