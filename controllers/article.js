@@ -18,11 +18,10 @@ exports.updateArticles = (async (req, res) => {
                     page: 2
                   })
 
-    const article = new Articles ({
-        articles: data.articles
-    });
     try {
-        const savedArticle = await article.save();
+        const savedArticle = await Articles.updateOne(
+            { $set: { articles: data.article } }
+        );
         res.send(savedArticle);
     }catch(err){
         res.status(400).send(err.message);
