@@ -1,14 +1,24 @@
 const Note = require('../models/Note');
 const jwt = require('jsonwebtoken');
 exports.getNotes = (async (req, res) => {
-    const decoded = await jwt.verify(req.header('auth-token'), process.env.TOKEN_SECRET);
-    const notes = await Note.find({"author": decoded._id}).exec();
-    res.json(notes);
+    try {
+        const decoded = await jwt.verify(req.header('auth-token'), process.env.TOKEN_SECRET);
+        const notes = await Note.find({"author": decoded._id}).exec();
+        res.json(notes);
+    } catch (error) {
+        res.json(error);
+    }
+
 });
 
 exports.getNote = (async (req, res) => {
-    const note = await Note.findById(req.params.noteID);
-    res.json(note);
+    try {
+        const note = await Note.findById(req.params.noteID);
+        res.json(note);
+    } catch (error) {
+        res.json(error);
+    }
+
 });
 exports.postNote = (async (req, res) => {
     const decoded = await jwt.verify(req.header('auth-token'), process.env.TOKEN_SECRET);  

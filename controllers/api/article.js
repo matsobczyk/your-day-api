@@ -1,4 +1,4 @@
-const Articles = require('../models/Articles');
+const Articles = require('../../models/Articles');
 const NewsAPI = require('newsapi');
 
 const newsapi = new NewsAPI('b9e4e3ad0e2b490bb7628960ed097477');
