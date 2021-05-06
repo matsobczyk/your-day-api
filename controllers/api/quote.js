@@ -1,4 +1,18 @@
 const Quote = require('../../models/Quote.js');
+const axios = require('axios');
+
+exports.getQuotes = (async (req, res) => {
+  const apiLink = 'https://goquotes-api.herokuapp.com/api/v1/random?count=1'
+  const response = await axios.get(apiLink);
+  const data = response.data
+  console.log(data);
+//   const quote = new Quote ({
+//   });
+
+    // const savedQuote = await quote.save();
+    res.json(data);
+});
+
 
 exports.getQuote = (req,res,next) => {
     Quote.find()

@@ -20,24 +20,20 @@ const userRoute = require('./routes/user.js');
 const postsRoute = require('./routes/posts.js');
 const notesRoute = require('./routes/notes.js');
 const weatherRoute = require('./routes/weather');
+const quoteRoute = require('./routes/quotes');
 app.use('/auth', authRoute);
 app.use('/admin', adminRoute );
 app.use('/user', userRoute );
 app.use('/post',postsRoute);
 app.use('/note', notesRoute);
 app.use('/weather', weatherRoute);
+app.use('/quote', quoteRoute);
 mongoose.connect(
    process.env.DB_CONNECTION ,
     { useUnifiedTopology: true, useNewUrlParser: true }, 
     () =>
     console.log('connected to db')
     );
-
-
-app.get('/', (req, res) => {
-    res.send('Make Your git')
-})
-
 
 app.listen(3000)
 

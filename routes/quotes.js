@@ -3,6 +3,6 @@ const quoteController = require('../controllers/api/quote');
 const auth = require('../middlewares/auth');
 
 //quotes
-router.get('/quotes', auth.auth, quoteController.getQuote);
+router.get('/', auth.auth, quoteController.getQuotes);
 
 module.exports = router;
