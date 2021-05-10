@@ -1,9 +1,12 @@
 const Post = require('../models/Post');
 const jwt = require('jsonwebtoken');
+const User = require('../models/User');
 exports.getPosts = (async (req, res) => {
+    const decoded = await jwt.verify(req.header('auth-token'), process.env.TOKEN_SECRET);
     try {
         const posts = await Post.find().exec();
-        res.json(posts);
+        const user = await User.findById(decoded);
+        res.json([posts, user.name]);
     } catch (error) {
         res.json(error);
     }
@@ -11,9 +14,10 @@ exports.getPosts = (async (req, res) => {
 });
 
 exports.getPost = (async (req, res) => {
+    const decoded = await jwt.verify(req.header('auth-token'), process.env.TOKEN_SECRET);
     try {
         const post = await Post.findById(req.params.postID);
-        res.json(post);
+        res.json(decoded);
     } catch (error) {
         res.json(error);
     }
