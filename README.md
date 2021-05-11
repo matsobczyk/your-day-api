@@ -52,7 +52,11 @@ w semestrze letnim roku akademickiego 2020/20201**
   3. Diagram komponentów
   4. Diagram wdrożenia
 2. Architektura systemu/oprogramowania - odpowiedzialność: programista
-  1. Architektura rozwoju - stos technologiczny.
+  1. Architektura rozwoju - stos technologiczny:
+        - Back End: Node.js, MongoDB
+        - Front End: Vue.js
+        - Api: pogoda - "Openweathermap", cytaty - "Goquotes herokuapp", artykuły - "News Api". 
+
   2. Architektura uruchomieniowa - stos technologiczny.
 3. Testy - odpowiedzialność: kontrola jakości.
   1. Scenariusze testów.
