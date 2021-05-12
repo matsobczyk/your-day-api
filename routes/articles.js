@@ -3,7 +3,7 @@ const articleController = require('../controllers/api/article');
 const auth = require('../middlewares/auth');
 
 //articles
-router.get('/articles', auth.auth, articleController.getArticles);
+router.get('/', auth.auth, articleController.getArticles);
 router.get('/updateArticles', auth.auth, articleController.updateArticles);
 
 module.exports = router;

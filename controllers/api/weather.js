@@ -5,7 +5,7 @@ exports.getWeather = (async (req, res) => {
   var city = req.params.city;
   const apiLink = 'https://api.openweathermap.org/data/2.5/weather?q=' + 
                   city + '&appid=' + process.env.WEATHER_API_KEY +
-                  '&lang=pl' + '&units=metric';
+                  '&lang=en' + '&units=metric';
   const response = await axios.get(apiLink);
   const data = response.data
   console.log(data);
