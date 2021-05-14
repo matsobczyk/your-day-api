@@ -46,7 +46,9 @@ exports.patchNote = (async (req, res) => {
 });
 exports.deleteNote = (async (req, res) => {
     try{
+        console.log(req.params.noteID);
         const removedNote = await Note.deleteOne({id: req.params.noteID});
+        
         res.json(removedNote);
     }catch(err){
         res.json(err);
