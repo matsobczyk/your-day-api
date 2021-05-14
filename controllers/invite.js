@@ -51,5 +51,10 @@ exports.checkInvitation = (async (req, res) => {
     if(!invitation) return res.status(400).send('Wrong invitation');
     
     const token = jwt.sign({inv: invitation}, process.env.TOKEN_SECRETInv);
-    res.header('inv-token', token).send(token);
+    res.header('inv-token', token);
+    const invitation2 = new Invitation ({
+        name: "nevermind",
+        inv: token
+    });
+    res.json(invitation2);
 });

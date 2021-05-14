@@ -4,6 +4,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const {registerValidation, loginValidation} = require('../middlewares/validation')
 const mailing = require("../mailer");
+const Token = require('../models/Token');
 
 
 //register User
@@ -51,7 +52,12 @@ exports.login = (async (req, res) => {
 
     //create and assign a token
     const token = jwt.sign({_id: user._id}, process.env.TOKEN_SECRET);
-    res.header('auth-token', token).send(token);
+    res.header('auth-token', token);
+    const token2 = new Token ({
+        token: token
+    });
+    res.json(token2);
+
 });
 
 //register Admin
