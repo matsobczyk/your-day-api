@@ -40,8 +40,8 @@ w semestrze letnim roku akademickiego 2020/20201**
 || Nazwa krótka | Opis | P |
 | --- | --- | --- | --- |
 | 1 | Łączność z bazą danych| Zapis danych użytkowników do internetowej bazy Mongo.db | 1 |
-| 2 | Szyfrowanie danych przychodzących| Hashowanie danych przychodzących z formularzy rejestracji i logowania. | 3 |
-| 3 | Szyfrowanie danych wychodzących. | Bezpieczne połączenie między serwerem a klientem. | 3 |
+| 2 |~~Szyfrowanie danych przychodzących~~|~~Hashowanie danych przychodzących z formularzy rejestracji i logowania.~~ | 3 |
+| 3 |~~Szyfrowanie danych wychodzących.~~|~~Bezpieczne połączenie między serwerem a klientem.~~ | 3 |
 | 4 | Weryfikacja kodów dostępu przy rejestracji.| Wykorzystujemy system generowania kodów dostępu, w celu weryfikacji użytkownika, który chce się zarejestrować, aby zapobiec masowemu zakładaniu kont przez boty. | 2 |
 | 5 | Weryfikacja kont użytkowników za pomocą generowania kodów dostępu.| Wykorzystujemy system generowania kodów dostępu, kody dostępu generują się przy logowaniu i pozwalają na dostęp do pozostałych funkcjonalności związanych z bazą danych. | 2 |
 | 6 | Potwierdzenie rejestracji drogą mailową | W momencie założenia konta użytkownik otrzymuje wiadomość drogą mailowa która potwierdza skuteczność procesu zakładania konta | 3 |
