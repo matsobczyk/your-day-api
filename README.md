@@ -49,6 +49,8 @@ w semestrze letnim roku akademickiego 2020/20201**
 
 
 1. Projekt (język UML) - odpowiedzialność: programista
+   ![diagram](https://user-images.githubusercontent.com/61236736/119490413-19f49680-bd5d-11eb-8b02-0008f1b9dc58.png)
+
   1. Diagram przypadków użycia
   2. Diagram czynności dla każdego przypadku użycia
   3. Diagram komponentów
