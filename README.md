@@ -54,7 +54,9 @@ w semestrze letnim roku akademickiego 2020/20201**
    ![diagramUseCase](https://user-images.githubusercontent.com/61236706/121028394-1410a380-c7a8-11eb-87ff-1432bc578869.png)
 
   3. Diagram czynności dla każdego przypadku użycia
-  4. Diagram komponentów
+  4. Diagram komponentów </br>
+  ![image](https://user-images.githubusercontent.com/61236706/121067758-be4df280-c7cb-11eb-8e7d-e17aeffed5e0.png)
+
   5. Diagram wdrożenia
 2. Architektura systemu/oprogramowania - odpowiedzialność: programista
   1. Architektura rozwoju - stos technologiczny:
