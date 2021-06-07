@@ -52,7 +52,6 @@ w semestrze letnim roku akademickiego 2020/20201**
    ![diagram](https://user-images.githubusercontent.com/61236736/119490413-19f49680-bd5d-11eb-8b02-0008f1b9dc58.png)
 
   1. Diagram przypadków użycia!
-  [image](https://user-images.githubusercontent.com/61236706/121027898-9ea4d300-c7a7-11eb-9ca0-90ba27c5b182.png)
   2. Diagram czynności dla każdego przypadku użycia
   3. Diagram komponentów
   4. Diagram wdrożenia
