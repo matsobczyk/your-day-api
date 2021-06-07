@@ -64,4 +64,12 @@ w semestrze letnim roku akademickiego 2020/20201**
   2. Architektura uruchomieniowa - stos technologiczny.
 3. Testy - odpowiedzialność: kontrola jakości.
   1. Scenariusze testów.
-  2. Sprawozdanie z wykonania scenariuszy testów.
+### Scenariusz testów
+
+| Id | Nazwa | Opis | Typ | Czynności przygotowawcze | Czynności końcowe |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Pobieranie danych pogodowych | Sprawdzanie poprawności pobierania i wyświetlania danych pogodowych | Testy funkcjonalne | 1. Sprawdzić czy posiadamy aktualną wersję aplikacji <br /> 2. Sprawdzić czy zwracany obiekt nie jest = NULL <br /> 3.Pobrać i wyświetlić dane pogodowe | brak |
+| 2 | Pobieranie danych (wiadomości) | Sprawdzanie poprawności pobierania i wyświetlania danych informacyjnyuch | Testy funkcjonalne | 1. Sprawdzić czy posiadamy aktualną wersję aplikacji <br /> 2. Sprawdzić czy zwracany obiekt nie jest = NULL <br /> 3. Pobrać i wyświetlić dane informacyjne | brak |
+| 3 | CRUD dla TODOs | Sprawdzanie poprawności pobierania, edycji, usuwania i wyświetlania danych z kontrolera TODO | Testy funkcjonalne | 1. Sprawdzić czy posiadamy aktualną wersję aplikacji <br /> 2. Sprawdzić czy zwracany obiekt nie jest = NULL <br /> 3.Pobrać i wyświetlić dane  <br /> 4.Dodać nowy Todo <br /> 5. Edytować dodany Todo <br /> 6. Usunąć dodany Todo | Upewnić się, czy obiekt został usunięty z bazy danych. |
+| 4 | Pobieranie cytatów | Sprawdzanie poprawności pobierania i wyświetlania cytatów | Testy funkcjonalne | 1. Sprawdzić czy posiadamy aktualną wersję aplikacji <br /> 2. Sprawdzić czy zwracany obiekt nie jest = NULL <br /> 3.Pobrać i wyświetlić cytaty 3. | brak |
+| 5 | CRUD dla WALL | Sprawdzanie poprawności pobierania, edycji, usuwania i wyświetlania danych z kontrolera WALL | Testy funkcjonalne | 1. Sprawdzić czy posiadamy aktualną wersję aplikacji <br /> 2. Sprawdzić czy zwracany obiekt nie jest = NULL <br /> 3.Pobrać i wyświetlić dane  <br /> 4.Dodać nowy obiekt typu WALL <br /> 5. Edytować dodany obiekt WALL <br /> 6. Usunąć dodany obiekt WALL | Upewnić się, czy obiekt został usunięty z bazy danych. |
